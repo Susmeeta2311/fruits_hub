@@ -1,0 +1,62 @@
+/* gift section starts here*/
+.gift-item {
+    position: relative;
+    padding: 10px;
+    transition: transform 0.5s ease; 
+    text-align: center;
+    flex: 1 1 30%;
+   
+  }
+  .gift-item:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom right,#c9ada7, #fff0f3);
+   
+  }
+  /* .gift-item .original-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.9em;
+  }
+  
+  .gift-item .discounted-price {
+    color: #38b000;
+    font-weight: bold;
+    
+  } */
+  
+  @keyframes color-change 
+  {
+    0% { color: red; }
+    25% { color: hotpink; }
+    50% { color: aqua; }
+    75% { color: orange; }
+    100% { color: purple; }
+  }
+  .gift-container {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px; 
+  }
+  /* marquee tag of the gift section*/
+  .marquee {
+    margin-top: 20px;
+    font-size: 50px;
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bolder;
+   animation: color-change 3s infinite;
+   border: 1px solid #f4845f;
+   background-color: #ffe4cc;
+  }
+  /* custom message */
+  .custom-message {
+    text-align: center;
+    color: #03045e;
+    font-size: 35px;
+    margin: 20px 0 ;
+    text-shadow: 3px 3px 3px lightskyblue;
+  }
+  /* gift section ends here  */
+  
