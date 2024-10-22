@@ -1,0 +1,202 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-image: url('./images/Slider-_5.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  padding: 0 20px;
+  color: white;
+}
+.navbar li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 350px;
+  padding: 0 20px;
+  color: white;
+
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: flex;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: rgba(255, 165, 0, 0.8);
+  color: white;
+  box-shadow: 5px 5px 5px white;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .navbar {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* Marquee Styles */
+.marquee {
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee-scroll 15s linear infinite;
+}
+
+.marquee img {
+  display: inline-block;
+  height: 350px;
+  width: auto;
+  margin-right: 60px;
+  margin-top: 30px;
+  border: 1px solid black;
+  transition: transform 0.5s ease;
+}
+
+.marquee img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Gallery Styles */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.fruit-item {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  width: 350px;
+  position: relative;
+  }
+  
+.fruit-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom right, #c9ada7, #fff0f3);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  width: 350px;
+  position: relative;
+  transition: transform 0.5s ease;
+
+}
+
+.fruit-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
+.fruit-item h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.9em;
+}
+
+.discounted-price {
+  font-weight: bold;
+  color: green;
+}
+
+.fruit-item:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fruit-item {
+    width: 90%;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffddd2;
+  height: 600px;
+  padding: 0 20px;
+  text-align: center;
+  margin: 300px 100px 100px;
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.footer-content p {
+  font-size: 20px;
+}
+
+.footer-content a {
+  text-decoration: none;
+}
+
+.footer-content form {
+  margin: 10px 0;
+}
+
+.social-links {
+  display: block;
+  font-size: x-large;
+}
+
+.social-links a {
+  display: block;
+  margin: 15px 0;
+  color: #c9184a;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-shadow: 6px 6px 7px hotpink;
+}
+/* Footer Styling */
+
