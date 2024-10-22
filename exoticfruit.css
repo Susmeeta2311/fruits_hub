@@ -1,0 +1,60 @@
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px; 
+
+  }
+  
+  .exoticfruit-item {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.5s ease; 
+    border: 2px solid lightgray;
+  }
+  .exoticfruit-item:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom right,#c9ada7,#fff0f3);
+  }
+  
+  .exoticfruit-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .exoticfruit-item .original-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.9em;
+  }
+  
+  .exoticfruit-item .discounted-price {
+    color: #38b000;
+    font-weight: bolder;
+  }
+  
+  .slogan h1 {
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bolder;
+   border: 1px solid  #d81159;
+   background-color: #f7b267;
+   color: rgb(99, 6, 17);
+   text-shadow: 4px 5px 6px #e1739f;
+   display: inline-block;
+  }
+  .slogan {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  
+  @media (max-width: 768px) 
+  {
+    .seasonalfruit-item
+    {
+        max-width: 100%;
+    }
+  }
+  
